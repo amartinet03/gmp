@@ -73,7 +73,7 @@ export default function CrearSolicitud() {
   return (
     <div className="min-vh-100" style={{ backgroundColor: '#f8f9fa' }}>
       {/* Navbar consistente */}
-      <nav className="navbar navbar-expand-lg p-3" style={{ backgroundColor: '#0D2D84' }}>
+      <nav className="navbar navbar-expand-lg p-3" style={{ backgroundColor: '#003c8a' }}>
         <div className="container-fluid">
           <div className="d-flex align-items-center w-100">
             <img src="/logo.png" alt="Logo Stellantis" height="40" className="me-4" />
