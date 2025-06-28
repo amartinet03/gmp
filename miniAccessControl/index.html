@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>miniACCESS CONTROL - Simulador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="title">miniACCESS <span>CONTROL</span></div>
+        <img  src="stellantis.jpeg" alt="Stellantis"  style="height: 60px; width: 200px;">
+    </header>
+
+    <video id="video-origen" autoplay muted playsinline style="display: block; width: 400px;"></video>
+
+    <main>
+        <section class="camaras">
+            <canvas class="camara" id="camara-patente" width="200" height="150"></canvas>
+            <canvas class="camara" id="camara-conductor" width="300" height="150"></canvas>
+            <canvas class="camara" id="camara-acompanante" width="300" height="150"></canvas>
+        </section>
+
+        <section class="datos">
+            <div id="datos-guardia">
+                <div class="texto-guardia">
+                    <p>Casilla de Guardia: <strong id="casilla"></strong></p>
+                    <p>Guardia: <strong id="nombre-guardia"></strong></p>
+                    <p>Legajo: <strong id="legajo-guardia"></strong></p>
+                    <p>Turno: <strong id="turno"></strong></p>
+                </div>
+
+                <img id="foto-guardia" src="" alt="Foto del guardia" class="foto-guardia" >
+
+                
+            </div>
+
+            <hr>
+
+            <p>Patente: <span id="patente"></span></p>
+
+            <hr>
+
+            <img id="foto-conductor" src="" alt="Foto del conductor" class="foto-conductor" width="150">
+
+            <p>Conductor: <span id="conductor"></span></p>
+            <p>Empresa: <span id="empresa"></span></p>
+            <p>Legajo: <span id="legajo"></span></p>
+            <p>Otros datos: <span id="otros-datos"></span></p>
+            <p>Ingreso registrado: <span id="ingreso-hora"></span></p>
+
+        </section>
+
+        <section class="botones-carga">
+            <button id="cargar-guardia" class="boton-oculto"></button>
+            <button id="cargar-datos" class="boton-oculto"></button>
+        </section>
+
+    </main>
+
+    <button id="compartir-pantalla"></button>
+
+    <video id="video-origen" autoplay muted playsinline style="display: none;"></video>
+
+    <script src="script.js"></script>
+</body>
+</html>
